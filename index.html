@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ridham’s Lamp Landing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="dark">
+  <!-- Always-visible pull control -->
+  <div class="pull">
+    <div id="string"></div>
+    <div id="handle" aria-label="Pull to toggle light"></div>
+  </div>
 
-    <div class="light-container">
-        <svg class="bulb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C7.58172 2 4 5.58172 4 10C4 12.8919 5.55685 15.4377 7.88675 16.9069L7.5 18H16.5L16.1132 16.9069C18.4431 15.4377 20 12.8919 20 10C20 5.58172 16.4183 2 12 2ZM12 4C15.3137 4 18 6.68629 18 10C18 12.1643 16.7932 14.0329 15.1182 15.0211C14.7331 15.2636 14.5445 15.7112 14.6366 16.1553L15 18H9L9.36342 16.1553C9.45549 15.7112 9.26693 15.2636 8.88182 15.0211C7.20677 14.0329 6 12.1643 6 10C6 6.68629 8.68629 4 12 4Z"/>
-            <path d="M12 20H13V22H11V20H12Z"/>
-            <path d="M12 17H13V19H11V17H12Z"/>
-        </svg>
-        
-        <div id="pull-string" class="pull-string"></div>
-    </div>
+  <!-- Central bulb -->
+  <div class="lamp-wrapper">
+    <img src="bulb.png" alt="Light Bulb" id="bulb" />
+  </div>
 
-    <div class="content">
-        <h1>Your Name</h1>
-        <h2>Your Role (e.g., Web Developer, Designer)</h2>
-        <p>
-            Welcome to my creative space. I build beautiful and functional websites that solve real-world problems. 
-            Feel free to look around and get in touch!
-        </p>
-        </div>
+  <!-- Revealed content -->
+  <div class="content">
+    <h1>Ridham</h1>
+    <p>Junior Developer at XYZ Corp</p>
+    <p>Passionate about IoT, visual storytelling, and automation.</p>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

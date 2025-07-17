@@ -28,7 +28,7 @@ body.light {
 }
 #string {
   width: 2px;
-  height: 150px;             /* base length */
+  height: 100px;            /* shorter string */
   background: #ccc;
   margin: 0 auto;
   transition: height 0.6s ease;
@@ -40,7 +40,7 @@ body.light {
   border-radius: 50%;
   background: #ccc;
   position: absolute;
-  top: 150px;                /* matches string height */
+  top: 100px;               /* matches string height */
   left: 50%;
   transform: translateX(-50%);
   cursor: grab;
@@ -64,13 +64,25 @@ body.light {
   height: 140px;
 }
 .bulb-glass {
+  position: relative;
   width: 100%;
   height: 100px;
-  background: radial-gradient(circle at 30% 30%, #fffbea, #fff1a8 60%, #f5d94e);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,241,168,0.7) 60%, rgba(245,217,78,0.5));
   border: 4px solid #e0c655;
   border-bottom: none;
   border-radius: 50% 50% 45% 45%;
   transition: transform 0.8s ease, opacity 0.6s ease;
+}
+.filament {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: #e59;
+  border-radius: 1px;
+  box-shadow: 0 0 6px rgba(255,200,200,0.6);
+  transform: translateX(-50%);
 }
 .bulb-base {
   position: absolute;
@@ -83,7 +95,7 @@ body.light {
   border-radius: 0 0 8px 8px;
 }
 
-/* Bulb Retract on “Light On” */
+/* Bulb Retract on Light On */
 body.light .bulb-glass {
   transform: translateY(-200px);
   opacity: 0;
@@ -108,7 +120,7 @@ body.light .content {
 @media (max-width: 600px) {
   .bulb { width: 70px; height: 100px; }
   #handle, .pull { width: 16px; }
-  #string { height: 120px; }
-  #handle { top: 120px; }
+  #string { height: 80px; }
+  #handle { top: 80px; }
   .content { top: 250px; }
 }

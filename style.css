@@ -1,0 +1,78 @@
+/* Basic Setup */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 1.5s ease;
+}
+
+/* Dark Mode (Initial State) */
+body.dark {
+    background-color: #121212; /* Pitch black */
+    color: #f0e7d8; /* Warm beige for text */
+}
+
+/* Light Mode (Toggled State) */
+body.light {
+    background-color: #f0e7d8; /* Warm beige */
+    color: #333333; /* Dark text */
+}
+
+/* Light Bulb & String Container */
+.light-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.bulb {
+    width: 100px;
+    height: 100px;
+    color: #f0e7d8; /* Bulb color in dark mode */
+    margin-top: -15px; /* Hides the top part of the bulb initially */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.pull-string {
+    width: 4px;
+    height: 30vh; /* 30% of the viewport height */
+    background-color: #555;
+    margin: -10px auto 0 auto; /* Connects to the bulb */
+    cursor: pointer;
+    transition: height 0.5s ease;
+}
+
+.pull-string:hover {
+    background-color: #f0e7d8;
+}
+
+/* Animation when light is on */
+body.light .bulb {
+    transform: translateY(-200px); /* Moves the bulb up */
+    opacity: 0;
+}
+
+body.light .pull-string {
+    height: 15vh; /* String shortens as it's "pulled" */
+}
+
+/* Content Area */
+.content {
+    position: relative;
+    top: 35vh; /* Starts below the initial pull-string */
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Hidden initially */
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in 1s, transform 1s ease-in 1s; /* Fades in after a 1s delay */
+}
+
+/* Animation to show content */
+body.light .content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

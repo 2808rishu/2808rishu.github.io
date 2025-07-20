@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ridham’s Lamp Landing</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridham Jain | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
-  <!-- Pull mechanism -->
-  <div class="pull">
-    <div id="string"></div>
-    <div id="handle" role="button" aria-label="Pull to toggle light"></div>
-  </div>
+<body>
+    <header>
+        <h1>Ridham Jain</h1>
+        <p>Electrical & Computer Engineering Student | Problem Solver | Creator</p>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
 
-  <!-- Centered bulb with filament -->
-  <div class="lamp-wrapper">
-    <div class="bulb">
-      <div class="bulb-glass">
-        <div class="filament"></div>
-      </div>
-      <div class="bulb-base"></div>
-    </div>
-  </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- Content to reveal -->
-  <div class="content">
-    <h1>Ridham</h1>
-    <p>Junior Developer at XYZ Corp</p>
-    <p>Passionate about IoT, visual storytelling, and automation.</p>
-  </div>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am passionate about technology, problem-solving, and creating impactful projects that merge engineering with innovation.</p>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>HTML, CSS, JS</li>
+            <li>Arduino</li>
+            <li>Robotics (Robocon)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>⚙ Robocon Robotics Challenge – MIT-WPU</li>
+            <li>📱 Customizable Excel Quotation System for Electrical Business</li>
+            <li>🌐 Legal Awareness Documentary Cinematography Project</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ridham@example.com">ridham@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/jain-ridham" target="_blank">linkedin.com/in/jain-ridham</a></p>
+        <p>GitHub: <a href="https://github.com/jainridham" target="_blank">github.com/jainridham</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Ridham Jain. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

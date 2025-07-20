@@ -1,126 +1,129 @@
-/* Reset & Base */
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
 }
+
+/* Light Theme */
 body {
-  overflow: hidden;
-  transition: background 0.6s ease, color 0.6s ease;
-  font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
+
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 8px 14px;
+    background: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#theme-toggle:hover {
+    background: #666;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills ul, .projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+}
+
+.skills li, .projects li {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 120px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Dark Mode */
 body.dark {
-  background: #000;
-  color: #fff;
-}
-body.light {
-  background: #f5f5dc;
-  color: #333;
+    background-color: #121212;
+    color: #ddd;
 }
 
-/* Pull-String + Handle */
-.pull {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-}
-#string {
-  width: 2px;
-  height: 100px;            /* shorter string */
-  background: #ccc;
-  margin: 0 auto;
-  transition: height 0.6s ease;
-}
-#handle {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  background: #ccc;
-  position: absolute;
-  top: 100px;               /* matches string height */
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: grab;
-  transition: top 0.6s ease, background 0.3s ease;
-}
-#handle:active {
-  cursor: grabbing;
+body.dark nav {
+    background: #1e1e1e;
 }
 
-/* Bulb Shape */
-.lamp-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-.bulb {
-  position: relative;
-  width: 100px;
-  height: 140px;
-}
-.bulb-glass {
-  position: relative;
-  width: 100%;
-  height: 100px;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(255,241,168,0.7) 60%, rgba(245,217,78,0.5));
-  border: 4px solid #e0c655;
-  border-bottom: none;
-  border-radius: 50% 50% 45% 45%;
-  transition: transform 0.8s ease, opacity 0.6s ease;
-}
-.filament {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  width: 2px;
-  height: 40px;
-  background: #e59;
-  border-radius: 1px;
-  box-shadow: 0 0 6px rgba(255,200,200,0.6);
-  transform: translateX(-50%);
-}
-.bulb-base {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(180deg, #999 0%, #666 100%);
-  border-radius: 0 0 8px 8px;
+body.dark nav a:hover {
+    background: #333;
 }
 
-/* Bulb Retract on Light On */
-body.light .bulb-glass {
-  transform: translateY(-200px);
-  opacity: 0;
+body.dark header {
+    background: #000;
 }
 
-/* Content Fade-In */
-.content {
-  position: absolute;
-  top: 300px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  max-width: 600px;
-  opacity: 0;
-  transition: opacity 0.8s ease 0.5s;
-}
-body.light .content {
-  opacity: 1;
+body.dark .skills li, body.dark .projects li {
+    background: #222;
+    color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .bulb { width: 70px; height: 100px; }
-  #handle, .pull { width: 16px; }
-  #string { height: 80px; }
-  #handle { top: 80px; }
-  .content { top: 250px; }
+body.dark footer {
+    background: #000;
 }

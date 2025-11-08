@@ -4,6 +4,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+/* Allow text selection in input fields and textareas */
+input, textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/* Allow text selection in resume download buttons */
+.download-button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -522,50 +542,6 @@ body.dark .intro-container p {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.education-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 8px 25px rgba(191, 64, 77, 0.3);
-}
-
-.education-item h3 {
-    color: #bf404d;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-}
-
-.institution, .date, .details {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    color: #d0d0d0;
-}
-
-.date {
-    font-weight: bold;
-    color: #d17a85;
-}
-
-/* Toggle PDF Button */
-.toggle-pdf-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #bf404d, #d17a85);
-    color: white !important;
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(191, 64, 77, 0.4);
-    margin-bottom: 20px;
-}
-
-.toggle-pdf-button:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(191, 64, 77, 0.6);
-    color: white !important;
-}
-
 /* Certification Section */
 .certification-item {
     text-align: left;
@@ -578,110 +554,15 @@ body.dark .intro-container p {
     transition: all 0.3s ease;
 }
 
-.certification-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 8px 25px rgba(191, 64, 77, 0.3);
-}
-
-.certification-item h3 {
-    color: #d17a85;
-    margin-bottom: 12px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.certification-item h3:hover {
-    color: #bf404d;
-    text-decoration: underline;
-}
-
-.issuer {
-    font-weight: bold;
-    color: #bf404d;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-/* Certificate Title */
-.certificate-title {
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.certificate-title:hover {
-    color: #bf404d;
-    text-decoration: underline;
-}
-
-/* Certificate Viewer */
-.certificate-viewer {
-    margin-top: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.certificate-viewer iframe {
-    border: 1px solid rgba(191, 64, 77, 0.3);
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.certificate-viewer .resume-download {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-.certificate-viewer .download-button {
-    display: inline-block;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #bf404d, #d17a85);
-    color: white !important;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(191, 64, 77, 0.4);
-    min-width: 180px;
-    text-align: center;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-}
-
-.certificate-viewer .download-button:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 8px 20px rgba(191, 64, 77, 0.6);
-    color: white !important;
-    text-decoration: none;
-}
-
 /* Responsibility Section */
 .responsibility-item {
     text-align: left;
-    margin: 30px auto;
+    margin: 30px 0;
     padding: 35px;
-    max-width: 800px;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(191, 64, 77, 0.15), rgba(191, 64, 77, 0.1));
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     border-left: 5px solid #d17a85;
-}
-
-.responsibility-item h3 {
-    color: #d17a85;
-    margin-bottom: 15px;
-    font-size: 1.6rem;
-}
-
-.organization {
-    font-weight: bold;
-    color: #bf404d;
-    margin-bottom: 12px;
-    font-size: 1.2rem;
 }
 
 /* Experience Section */
@@ -764,6 +645,16 @@ body.dark .intro-container p {
 .hobbies-list span:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 8px 25px rgba(191, 64, 77, 0.7);
+}
+
+.hobbies-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.hobbies-list a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 /* Contact Section */

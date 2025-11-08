@@ -70,3 +70,40 @@ window.addEventListener('scroll', function() {
         scrollButton.remove();
     }
 });
+
+// Prevent text selection and copying
+document.addEventListener('DOMContentLoaded', function() {
+    // Prevent context menu
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+    
+    // Prevent common keyboard shortcuts for copying
+    document.addEventListener('keydown', function(e) {
+        // Prevent Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+U, Ctrl+S, Ctrl+P
+        if (e.ctrlKey && 
+            (e.keyCode === 65 || 
+             e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 83 || 
+             e.keyCode === 80)) {
+            e.preventDefault();
+        }
+        
+        // Prevent F12 (developer tools)
+        if (e.keyCode === 123) {
+            e.preventDefault();
+        }
+        
+        // Prevent Ctrl+Shift+I (developer tools)
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+            e.preventDefault();
+        }
+        
+        // Prevent Ctrl+Shift+J (console)
+        if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+            e.preventDefault();
+        }
+    });
+});

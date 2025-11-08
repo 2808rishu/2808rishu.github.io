@@ -554,6 +554,30 @@ body.dark .intro-container p {
     transition: all 0.3s ease;
 }
 
+.certification-item h3 {
+    color: #d17a85;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.certification-item h3:hover {
+    color: #bf404d;
+    text-decoration: underline;
+}
+
+/* Certificate Title */
+.certificate-title {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.certificate-title:hover {
+    color: #bf404d;
+    text-decoration: underline;
+}
+
 /* Certificate Note */
 .note {
     text-align: center;
@@ -663,7 +687,7 @@ body.dark .intro-container p {
 
 .hobbies-list a:hover {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* Contact Section */

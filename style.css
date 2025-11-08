@@ -17,7 +17,7 @@ body {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #00b09b, #96c93d);
     color: #fff;
     position: relative;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -34,6 +34,12 @@ body {
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     line-height: 1.4;
+    color: #ff7a00;
+}
+
+.name {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .quote-author {
@@ -80,13 +86,13 @@ body {
 }
 
 .tab-button:hover {
-    color: #2575fc;
-    background: rgba(37, 117, 252, 0.1);
+    color: #00b09b;
+    background: rgba(0, 176, 155, 0.1);
     border-radius: 5px;
 }
 
 .tab-button.active {
-    color: #2575fc;
+    color: #00b09b;
 }
 
 .tab-button.active::after {
@@ -96,7 +102,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #2575fc;
+    background: #00b09b;
     border-radius: 3px 3px 0 0;
 }
 
@@ -160,7 +166,7 @@ body {
 }
 
 .summary-card {
-    background: linear-gradient(135deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1));
+    background: linear-gradient(135deg, rgba(0, 176, 155, 0.1), rgba(150, 201, 61, 0.1));
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -172,7 +178,7 @@ body {
 }
 
 .summary-card h3 {
-    color: #6a11cb;
+    color: #00b09b;
     margin-bottom: 10px;
 }
 
@@ -186,7 +192,7 @@ body {
 
 h2 {
     margin-bottom: 25px;
-    color: #2575fc;
+    color: #00b09b;
     font-size: 2rem;
     position: relative;
     display: inline-block;
@@ -200,7 +206,7 @@ h2::after {
     transform: translateX(-50%);
     width: 70px;
     height: 4px;
-    background: #6a11cb;
+    background: #00b09b;
     border-radius: 2px;
 }
 
@@ -229,7 +235,7 @@ h2::after {
 
 .skill-tags span {
     display: inline-block;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #00b09b, #96c93d);
     color: #fff;
     padding: 10px 20px;
     margin: 8px;
@@ -291,15 +297,15 @@ h2::after {
 
 .card a {
     display: inline-block;
-    margin-top: auto;
-    color: #2575fc;
+    margin-top: 10px;
+    color: #00b09b;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .card a:hover {
-    color: #6a11cb;
+    color: #007a6b;
     text-decoration: underline;
 }
 
@@ -367,7 +373,7 @@ body.dark .card {
 }
 
 body.dark .skill-tags span {
-    background: linear-gradient(135deg, #7d2ae8, #3a7ffd);
+    background: linear-gradient(135deg, #00c5a5, #a5d94f);
 }
 
 body.dark section {
@@ -376,11 +382,11 @@ body.dark section {
 }
 
 body.dark h2::after {
-    background: #7d2ae8;
+    background: #00c5a5;
 }
 
 body.dark .summary-card {
-    background: linear-gradient(135deg, rgba(125, 42, 232, 0.2), rgba(58, 127, 253, 0.2));
+    background: linear-gradient(135deg, rgba(0, 197, 165, 0.2), rgba(165, 217, 79, 0.2));
     color: #eee;
 }
 
@@ -389,7 +395,7 @@ body.dark .tab-nav {
 }
 
 body.dark .hero {
-    background: linear-gradient(135deg, #5a0db9, #1f65e0);
+    background: linear-gradient(135deg, #009a87, #7fb836);
 }
 
 /* Education Section */
@@ -418,7 +424,7 @@ body.dark .hero {
 
 .date {
     font-weight: bold;
-    color: #6a11cb;
+    color: #00b09b;
 }
 
 /* Experience Section */
@@ -427,18 +433,18 @@ body.dark .hero {
     margin: 25px 0;
     padding: 25px;
     border-radius: 10px;
-    background: rgba(106, 28, 203, 0.05);
+    background: rgba(0, 176, 155, 0.05);
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
 .experience-item h3 {
-    color: #6a11cb;
+    color: #00b09b;
     margin-bottom: 5px;
 }
 
 .company {
     font-weight: bold;
-    color: #2575fc;
+    color: #00b09b;
     margin-bottom: 10px;
 }
 
@@ -456,18 +462,18 @@ body.dark .hero {
     margin: 20px 0;
     padding: 20px;
     border-radius: 8px;
-    background: rgba(37, 117, 252, 0.03);
-    border: 1px solid rgba(37, 117, 252, 0.1);
+    background: rgba(0, 176, 155, 0.03);
+    border: 1px solid rgba(0, 176, 155, 0.1);
 }
 
 .certification-item h3 {
-    color: #2575fc;
+    color: #00b09b;
     margin-bottom: 8px;
 }
 
 .issuer {
     font-weight: bold;
-    color: #6a11cb;
+    color: #00b09b;
     margin-bottom: 8px;
 }
 
@@ -478,17 +484,17 @@ body.dark .hero {
     padding: 25px;
     max-width: 600px;
     border-radius: 10px;
-    background: linear-gradient(135deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1));
+    background: linear-gradient(135deg, rgba(0, 176, 155, 0.1), rgba(150, 201, 61, 0.1));
 }
 
 .responsibility-item h3 {
-    color: #6a11cb;
+    color: #00b09b;
     margin-bottom: 8px;
 }
 
 .organization {
     font-weight: bold;
-    color: #2575fc;
+    color: #00b09b;
     margin-bottom: 8px;
 }
 
@@ -503,7 +509,7 @@ body.dark .hero {
 
 .hobbies-list span {
     display: inline-block;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #00b09b, #96c93d);
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
@@ -524,14 +530,14 @@ body.dark .hero {
 }
 
 #contact a {
-    color: #2575fc;
+    color: #00b09b;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 #contact a:hover {
-    color: #6a11cb;
+    color: #007a6b;
     text-decoration: underline;
 }
 
@@ -547,7 +553,7 @@ body.dark .hero {
 .download-button {
     display: inline-block;
     padding: 12px 25px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #00b09b, #96c93d);
     color: white;
     text-decoration: none;
     border-radius: 30px;

@@ -59,7 +59,7 @@ li::before {
 /* Header */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 40px 20px 20px;
     background: #000000;
     color: #fff;
     position: relative;
@@ -67,28 +67,17 @@ li::before {
     overflow: hidden;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(191, 64, 77, 0.1) 0%, rgba(191, 64, 77, 0) 70%);
-    transform: rotate(30deg);
-}
-
 .quote-container {
     max-width: 900px;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
 }
 
 .movie-quote {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-style: italic;
-    margin-bottom: 20px;
+    margin: 10px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     line-height: 1.4;
     color: #bf404d;
@@ -105,8 +94,10 @@ li::before {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     font-size: 3rem;
-    margin-top: 20px;
+    margin: 20px auto;
     letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 /* Name styling options for preview */

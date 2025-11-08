@@ -90,6 +90,14 @@ li::before {
     font-weight: 400;
 }
 
+.separator-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #bf404d, transparent);
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
 .name {
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);

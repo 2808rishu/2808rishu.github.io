@@ -587,6 +587,13 @@ body.dark .intro-container p {
     color: #d17a85;
     margin-bottom: 12px;
     font-size: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.certification-item h3:hover {
+    color: #bf404d;
+    text-decoration: underline;
 }
 
 .issuer {
@@ -594,6 +601,17 @@ body.dark .intro-container p {
     color: #bf404d;
     margin-bottom: 10px;
     font-size: 1.1rem;
+}
+
+/* Certificate Title */
+.certificate-title {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.certificate-title:hover {
+    color: #bf404d;
+    text-decoration: underline;
 }
 
 /* Certificate Viewer */

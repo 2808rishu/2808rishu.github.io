@@ -94,8 +94,8 @@ li::before {
     height: 1px;
     background: linear-gradient(90deg, transparent, #bf404d, transparent);
     margin: 15px auto;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .name {

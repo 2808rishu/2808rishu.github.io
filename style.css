@@ -293,9 +293,9 @@ h2::after {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #bf404d, #d17a85);
+    width: 0;
+    height: 0;
+    background: transparent;
     border-radius: 2px;
 }
 
@@ -387,7 +387,7 @@ h2::after {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #bf404d, #d17a85);
     color: white;
     border: none;
     border-radius: 50%;
@@ -395,14 +395,14 @@ h2::after {
     height: 50px;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(191, 64, 77, 0.5);
     transition: transform 0.3s, opacity 0.3s;
     z-index: 1000;
 }
 
 #scroll-top:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 15px rgba(191, 64, 77, 0.7);
 }
 
 /* Animations */

@@ -533,13 +533,35 @@ body.dark .intro-container p {
 /* Education Section */
 .education-item {
     text-align: left;
-    margin: 30px 0;
-    padding: 30px;
+    margin: 25px 0;
+    padding: 25px;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(191, 64, 77, 0.1), rgba(191, 64, 77, 0.05));
     transition: all 0.3s ease;
     border-left: 5px solid #bf404d;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(191, 64, 77, 0.3);
+}
+
+.education-item h3 {
+    color: #bf404d;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.institution, .date, .details {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #d0d0d0;
+}
+
+.date {
+    font-weight: bold;
+    color: #bf404d;
 }
 
 /* Certification Section */
@@ -548,10 +570,15 @@ body.dark .intro-container p {
     margin: 25px 0;
     padding: 25px;
     border-radius: 15px;
-    background: linear-gradient(135deg, rgba(191, 64, 77, 0.05), rgba(191, 64, 77, 0.1));
+    background: linear-gradient(135deg, rgba(191, 64, 77, 0.1), rgba(191, 64, 77, 0.05));
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border-left: 5px solid #bf404d;
     transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(191, 64, 77, 0.3);
 }
 
 .certification-item h3 {
@@ -591,11 +618,11 @@ body.dark .intro-container p {
 /* Responsibility Section */
 .responsibility-item {
     text-align: left;
-    margin: 30px 0;
-    padding: 35px;
+    margin: 25px 0;
+    padding: 25px;
     border-radius: 15px;
-    background: linear-gradient(135deg, rgba(191, 64, 77, 0.15), rgba(191, 64, 77, 0.1));
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, rgba(191, 64, 77, 0.1), rgba(191, 64, 77, 0.05));
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     border-left: 5px solid #bf404d;
 }
 

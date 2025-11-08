@@ -75,7 +75,7 @@ li::before {
 }
 
 .movie-quote {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-style: italic;
     margin: 10px 0;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);

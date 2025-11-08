@@ -3,39 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ridham Jain - Electrical and Computer Engineering Student | Content Creator | Problem Solver">
+    <meta name="keywords" content="Ridham Jain, Resume, Portfolio, Electrical Engineering, Computer Engineering, Content Creator">
+    <meta name="author" content="Ridham Jain">
     <title>Ridham Jain | Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="hero">
-        <img src="assets/profile.jpg" alt="Ridham Jain" class="profile-pic">
+        <div class="quote-container">
+            <p class="movie-quote">"An idea is like a virus. Resilient. Highly contagious. And even the smallest seed of an idea can grow to define or destroy you."</p>
+            <p class="quote-author">- Dom Cobb, Inception, 2010</p>
+        </div>
         <h1>Ridham Jain</h1>
-        <p>Bachelor of Technology (B.Tech) Student | Content Creator | Problem Solver</p>
         <button id="theme-toggle">🌙 Dark Mode</button>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#responsibility">Responsibility</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact</a>
+    <nav class="tab-nav">
+        <button class="tab-button active" data-tab="home">Home</button>
+        <button class="tab-button" data-tab="about">About</button>
+        <button class="tab-button" data-tab="education">Education</button>
+        <button class="tab-button" data-tab="skills">Skills</button>
+        <button class="tab-button" data-tab="projects">Projects</button>
+        <button class="tab-button" data-tab="experience">Experience</button>
+        <button class="tab-button" data-tab="certifications">Certifications</button>
+        <button class="tab-button" data-tab="responsibility">Responsibility</button>
+        <button class="tab-button" data-tab="hobbies">Hobbies</button>
+        <button class="tab-button" data-tab="contact">Contact</button>
     </nav>
 
-    <section id="about" class="fade-in">
+    <div id="home" class="tab-content active">
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <h3>Technical Expertise</h3>
+                    <p>Electrical & Computer Engineering student with skills in Python, C/C++, robotics, and web development</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Creative Skills</h3>
+                    <p>Content creator with experience in cinematography, video editing, and storytelling</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Leadership</h3>
+                    <p>Head Boy with proven ability to organize events and lead teams effectively</p>
+                </div>
+            </div>
+        </div>
+        <div class="intro-container">
+            <p>I’m an Electrical and Computer Engineering student driven by curiosity and the desire to connect logic, design, and technology in meaningful ways. I enjoy exploring how systems—whether electronic, computational, or human-centered—work beneath the surface, and I find satisfaction in turning complex problems into structured, efficient solutions. My interests span programming, data structures, AI tools, and content creation, helping me bridge the gap between analytical precision and creative communication.</p>
+            <p>Beyond academics, I’m passionate about cinema and cinematography. I see filmmaking as a blend of art and engineering—a process where storytelling, visuals, and rhythm come together through structured creativity. Working on cinematic projects has sharpened my sense of visual storytelling, framing, and narrative design, which often influences how I think about user experience and communication in technology. I also enjoy trekking, photography, and design, as they give me space to observe and express ideas differently. Whether I’m crafting a frame or coding a system, I focus on clarity, intention, and impact.</p>
+        </div>
+    </div>
+    <div id="about" class="tab-content">
         <h2>About Me</h2>
         <p>
             I’m an Electrical & Computer Engineering student at MIT-WPU who thrives on solving problems—whether debugging a Python script or coordinating a school‑wide festival.
             As Head Boy, I led my school’s student council, organizing major events and securing over 50 sponsors.
             Today, I combine technical expertise with storytelling as a Content & Media Contributor at Kacheri Diaries, crafting legal articles, social media campaigns, and leading creative cinematography projects.
         </p>
-    </section>
+    </div>
 
-    <section id="education" class="fade-in">
+    <div id="education" class="tab-content">
         <h2>Education</h2>
         <div class="education-item">
             <h3>Bachelor of Technology (B.Tech) in Electrical & Computer Engineering</h3>
@@ -55,44 +84,62 @@
             <p class="date">2020 - 2022</p>
             <p class="details">CBSE Board | 9.6 CGPA</p>
         </div>
-    </section>
+    </div>
 
-    <section id="skills" class="fade-in">
+    <div id="skills" class="tab-content">
         <h2>Skills</h2>
-        <div class="skill-tags">
-            <span>Python</span>
-            <span>C/C++</span>
-            <span>HTML, CSS, JS</span>
-            <span>Arduino</span>
-            <span>Robotics</span>
-            <span>Content Writing</span>
-            <span>Video Editing</span>
-            <span>Leadership</span>
+        <div class="skill-categories">
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>C/C++</span>
+                    <span>HTML, CSS, JS</span>
+                    <span>Arduino</span>
+                    <span>Robotics</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Creative & Soft Skills</h3>
+                <div class="skill-tags">
+                    <span>Content Writing</span>
+                    <span>Video Editing</span>
+                    <span>Leadership</span>
+                    <span>Communication</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <section id="projects" class="fade-in">
+    <div id="projects" class="tab-content">
         <h2>Projects</h2>
         <div class="project-grid">
             <div class="card">
                 <h3>Robocon Robotics Challenge</h3>
-                <p>Developed and deployed autonomous and semi-autonomous robots for national-level robotics competition.</p>
+                <p class="project-description">Developed and deployed autonomous and semi-autonomous robots for national-level robotics competition.</p>
+                <p class="project-tech"><strong>Technologies:</strong> Robotics, Embedded Systems, C++</p>
+                <p class="project-outcome"><strong>Outcome:</strong> Successfully competed at national level, demonstrating advanced problem-solving skills</p>
                 <a href="#" target="_blank">View Project</a>
             </div>
             <div class="card">
                 <h3>Customizable Excel Quotation System</h3>
-                <p>Created an advanced Excel-based tool for Mamta Electricals to automate quotations with VBA macros.</p>
+                <p class="project-description">Created an advanced Excel-based tool for Mamta Electricals to automate quotations with VBA macros.</p>
+                <p class="project-tech"><strong>Technologies:</strong> Excel, VBA, Automation</p>
+                <p class="project-outcome"><strong>Outcome:</strong> Reduced quotation preparation time by 70%, improved accuracy</p>
                 <a href="#" target="_blank">View Project</a>
             </div>
             <div class="card">
                 <h3>Legal Awareness Documentary</h3>
-                <p>Directed cinematography for Ambedkar Jayanti legal awareness campaign in Uruli Kanchan.</p>
+                <p class="project-description">Directed cinematography for Ambedkar Jayanti legal awareness campaign in Uruli Kanchan.</p>
+                <p class="project-tech"><strong>Technologies:</strong> Cinematography, Video Editing, Storytelling</p>
+                <p class="project-outcome"><strong>Outcome:</strong> Reached 5000+ viewers, increased community awareness</p>
                 <a href="#" target="_blank">View Project</a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="experience" class="fade-in">
+    <div id="experience" class="tab-content">
         <h2>Experience</h2>
         <div class="experience-item">
             <h3>Content & Media Contributor</h3>
@@ -113,9 +160,9 @@
                 <li>Studied reader behavior and adjusted content strategy, leading to increased engagement across mobile platforms and wider audience reach</li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section id="certifications" class="fade-in">
+    <div id="certifications" class="tab-content">
         <h2>Certifications</h2>
         <div class="certification-item">
             <h3>Completion of C Training</h3>
@@ -137,9 +184,9 @@
             <p class="issuer">NPTEL</p>
             <p class="details">Studied Python programming, algorithmic problem-solving, and core data structure concepts</p>
         </div>
-    </section>
+    </div>
 
-    <section id="responsibility" class="fade-in">
+    <div id="responsibility" class="tab-content">
         <h2>Positions of Responsibility</h2>
         <div class="responsibility-item">
             <h3>Head Boy of the School</h3>
@@ -147,9 +194,9 @@
             <p class="date">2022-2023</p>
             <p class="details">Led the student council, organized major events, and secured over 50 sponsors for school festivals</p>
         </div>
-    </section>
+    </div>
 
-    <section id="hobbies" class="fade-in">
+    <div id="hobbies" class="tab-content">
         <h2>Hobbies & Interests</h2>
         <div class="hobbies-list">
             <span>Trekking</span>
@@ -158,16 +205,20 @@
             <span>Canva Designing</span>
             <span>Cinema Enthusiast</span>
         </div>
-    </section>
+    </div>
 
-    <section id="contact" class="fade-in">
+    <div id="contact" class="tab-content">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:jainridham2006@gmail.com">jainridham2006@gmail.com</a></p>
         <p>Phone: +91 8320891374</p>
         <p>Location: Surat, Gujarat, India</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/jain-ridham/" target="_blank">linkedin.com/in/jain-ridham</a></p>
         <p>GitHub: <a href="https://github.com/jainridham" target="_blank">github.com/jainridham</a></p>
-    </section>
+        <div class="resume-download">
+            <a href="Ridham_Jain_Resume.pdf" target="_blank" class="download-button">View Resume (PDF)</a>
+            <a href="Ridham_Jain_Resume.pdf" download="Ridham_Jain_Resume.pdf" class="download-button">Download Resume</a>
+        </div>
+    </div>
 
     <footer>
         <p>© 2025 Ridham Jain | Made with ❤️</p>

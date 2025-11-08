@@ -603,15 +603,6 @@ body.dark .intro-container p {
     font-size: 1.1rem;
 }
 
-/* Certificate Note */
-.note {
-    text-align: center;
-    color: #a0a0a0;
-    font-style: italic;
-    margin: 15px 0 25px 0;
-    font-size: 1.1rem;
-}
-
 /* Certificate Title */
 .certificate-title {
     cursor: pointer;
@@ -623,12 +614,57 @@ body.dark .intro-container p {
     text-decoration: underline;
 }
 
+/* Certificate Viewer */
+.certificate-viewer {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.certificate-viewer iframe {
+    border: 1px solid rgba(191, 64, 77, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.certificate-viewer .resume-download {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.certificate-viewer .download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #bf404d, #d17a85);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(191, 64, 77, 0.4);
+    min-width: 180px;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.certificate-viewer .download-button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(191, 64, 77, 0.6);
+    color: white !important;
+    text-decoration: none;
+}
+
 /* Responsibility Section */
 .responsibility-item {
     text-align: left;
     margin: 30px auto;
     padding: 35px;
-    max-width: 800px; /* This ensures it matches the width of other sections */
+    max-width: 800px;
     border-radius: 15px;
     background: linear-gradient(135deg, rgba(191, 64, 77, 0.15), rgba(191, 64, 77, 0.1));
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
@@ -646,18 +682,6 @@ body.dark .intro-container p {
     color: #bf404d;
     margin-bottom: 12px;
     font-size: 1.2rem;
-}
-
-.date {
-    font-weight: bold;
-    color: #d17a85;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-}
-
-.details {
-    color: #d0d0d0;
-    font-size: 1.1rem;
 }
 
 /* Experience Section */

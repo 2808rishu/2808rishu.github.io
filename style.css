@@ -544,6 +544,28 @@ body.dark .intro-container p {
     color: #d17a85;
 }
 
+/* Toggle PDF Button */
+.toggle-pdf-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #bf404d, #d17a85);
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(191, 64, 77, 0.4);
+    margin-bottom: 20px;
+}
+
+.toggle-pdf-button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(191, 64, 77, 0.6);
+    color: white !important;
+}
+
 /* Certification Section */
 .certification-item {
     text-align: left;

@@ -25,6 +25,18 @@ function showTab(tabId) {
     }
 }
 
+// Toggle PDF visibility
+function togglePdf(pdfId) {
+    const pdfElement = document.getElementById(pdfId);
+    if (pdfElement) {
+        if (pdfElement.style.display === 'none') {
+            pdfElement.style.display = 'block';
+        } else {
+            pdfElement.style.display = 'none';
+        }
+    }
+}
+
 // Initialize tab navigation
 document.addEventListener('DOMContentLoaded', function() {
     const tabButtons = document.querySelectorAll('.tab-button');

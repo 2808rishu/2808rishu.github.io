@@ -1,0 +1,83 @@
+WEBSITE STRUCTURE AND FUNCTIONALITY EXPLANATION
+==============================================
+
+This document explains how the three main files (HTML, CSS, JS) work together to create the resume website.
+
+1. INDEX.HTML - Structure and Content
+-------------------------------------
+The HTML file serves as the skeleton of the website, containing all the content and defining the structure.
+
+Main Components:
+- Header with movie quotes
+- Navigation tabs (Home, Education, Skills, Experience, Hobbies, Contact)
+- Tab content sections with personal information
+- PDF embedding for certificates
+- Footer with copyright information
+- Links to CSS and JavaScript files
+
+Key Features:
+- Tab-based navigation system that shows/hides content sections
+- Interactive certificate viewer that expands when clicked
+- Responsive design that works on different screen sizes
+- External links to social media profiles and contact information
+
+2. STYLE.CSS - Presentation and Design
+--------------------------------------
+The CSS file controls the visual appearance of the website.
+
+Main Styling Features:
+- Dark theme with red accent colors
+- Responsive layout using Flexbox and Grid
+- Hover effects on interactive elements
+- Smooth animations and transitions
+- Dark mode support with different color schemes
+- Consistent styling across all sections (education, skills, experience, etc.)
+
+Specific Styles:
+- Typography and color schemes
+- Layout and spacing
+- Button and navigation styling
+- Card-based design for content sections
+- PDF viewer styling
+- Mobile-responsive adjustments
+
+3. SCRIPT.JS - Interactivity and Functionality
+---------------------------------------------
+The JavaScript file adds dynamic behavior to the website.
+
+Main Functions:
+- Tab navigation system (showTab function)
+  * Switches between content sections
+  * Updates active tab highlighting
+  * Smooth scrolling to top of content
+
+- PDF viewer toggle (togglePdf function)
+  * Shows/hides certificate PDFs when titles are clicked
+  * Uses robust detection of current display state
+
+- Scroll to top button
+  * Appears when user scrolls down the page
+  * Smoothly scrolls back to top when clicked
+
+- Security features
+  * Disables right-click context menu
+  * Prevents common keyboard shortcuts for copying content
+
+How the Files Work Together:
+---------------------------
+1. HTML provides the structure and content
+2. CSS applies styling and layout to the HTML elements
+3. JavaScript adds interactivity and dynamic behavior
+
+When a user visits the website:
+1. Browser loads index.html
+2. HTML references style.css for styling
+3. HTML references script.js for functionality
+4. User interacts with tabs, PDF viewers, and other elements
+5. JavaScript handles user interactions and updates the display
+6. CSS ensures everything looks visually appealing
+
+File Dependencies:
+- index.html depends on style.css and script.js
+- style.css depends on the HTML element classes and IDs
+- script.js depends on HTML element IDs and classes for DOM manipulation
